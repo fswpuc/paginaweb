@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela e Figuras</title>
+    <style>
+        table
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+        }
+        thead
+        {
+            background-color: rgb(68,114,196);
+            color:red;
+        }
+        tr:nth-child(odd) /* odd = par */
+        {
+            background-color: #cfd5ea;
+            height: 25px;
+
+        }
+        tr:nth-child(even) /* even = impar */
+        {
+            background-color: #e9ebf5;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Países, capitais e continentes</caption>
+        <thead>
+            <tr>
+                <th bgcolor="#4472c4" width="200">PAÍS</th>
+                <th bgcolor="#4472c4" width="200">CAPITAL</th>
+                <th bgcolor="#4472c4" width="200">CONTINENTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style: background-color:rgb(207,213,234)>
+                <td>Brasil</td>
+                <td>Brasilia</td>
+                <td>Americano</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td>Washington</td>
+                <td>Americano</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+                <td>Europeu</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td>Tokyo</td>
+                <td>Asiático</td>
+            </tr>
+            <tr>
+                <td>África do Sul</td>
+                <td>Cidade do Cabo</td>
+                <td>Africano</td>
+            </tr>
+            <tr>
+                <td>Austrália</td>
+                <td>Camberra</td>
+                <td>Oceânia</td>
+            </tr>            
+        </tbody>
+    </table>
+    <br><br>
+    <div>
+        <img src="mapa_mundi.png" usemap="#mapa">
+        <map name="mapa">
+            <area shape="rect" coords="130,60,190,100" href="https://pt.wikipedia.org/wiki/América_do_Norte">
+            <area shape="rect" coords="190,150,250,220" href="https://pt.wikipedia.org/wiki/América_do_Sul">
+            <area shape="rect" coords="300,40,390,80" href="https://pt.wikipedia.org/wiki/Europa">
+            <area shape="rect" coords="290,90,390,220" href="https://pt.wikipedia.org/wiki/África">
+            <area shape="rect" coords="400,20,520,120" href="https://pt.wikipedia.org/wiki/Ásia">
+            <area shape="rect" coords="500,180,570,240" href="https://pt.wikipedia.org/wiki/Oceania">
+        </map>
+    </div>
+</body>
+</html>
